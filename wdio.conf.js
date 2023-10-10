@@ -59,11 +59,11 @@ exports.config = {
       platformName: "Android",
       // browserName: 'Chrome',
       "appium:deviceName": "emulator-5554",
-      "appium:platformVersion": "10.0",
+      "appium:platformVersion": process.env.AndroidVersion,
       "appium:automationName": "UiAutomator2",
-        "appium:app":
-          "D:/appium/Appium-with-WebdriverIo/app/android/calculator.apk",
-    //   "appium:app": path.join(process.cwd(), "app/android/calculator.apk"),
+        // "appium:app":
+        //   "D:/appium/Appium-with-WebdriverIo/app/android/calculator.apk",
+      "appium:app": path.join(process.cwd(), "app/android/calculator.apk"),
     },
   ]),
 
